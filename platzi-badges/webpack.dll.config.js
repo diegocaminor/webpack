@@ -10,9 +10,9 @@ module.exports = {
     ]
   },
   output: {
-    path: path.resolve(__dirname, 'dist'),
-    filename: 'js/[name].js',
-    library: '[name]',
+    path: path.resolve(__dirname, "dist"),
+    filename: "js/[name].[hash].dll.js",
+    library: "[name]"
   },
   plugins: [
     new webpack.DllPlugin({
